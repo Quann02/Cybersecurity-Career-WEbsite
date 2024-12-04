@@ -35,11 +35,6 @@ const Navbar = () => {
           Cybersecurity ToolKit
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/account" activeClassName="active">
-            Account
-          </NavLink>
-        </li>
       </ul>
       <div
         className={`navbar-hamburger ${isMobileMenuOpen ? "open" : ""}`}
