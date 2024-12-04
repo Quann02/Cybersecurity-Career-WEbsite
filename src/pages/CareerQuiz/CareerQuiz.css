@@ -1,0 +1,212 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height for scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+/* Quiz header styling */
+.quiz-header {
+  background-image: linear-gradient(to right, #4b79a1, #283e51);
+  color: white;
+  padding: 4rem 2rem 2rem; /* Adjusted padding for balance */
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Space below the header */
+}
+
+.quiz-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-header p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem; /* Added spacing between paragraphs */
+}
+
+/* Instructions container styling */
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 2rem; /* Added spacing below the instructions container */
+}
+
+.instructions-content {
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  margin-bottom: 2rem; /* Space below the content box */
+}
+
+.instructions-content p {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 1.2rem; /* Increased space between paragraphs */
+  line-height: 1.5; /* Better readability */
+}
+
+.instructions-container button {
+  margin-top: 2rem; /* Added spacing above the button */
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.instructions-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Container for the entire form */
+.form-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  height: 100%; /* Full height of the viewport */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  padding: 20px;
+  background-color: #f4f7fa;
+}
+
+/* Form container for centering and layout */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Individual question styling with box */
+.question {
+  background-color: #f1f4f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  color: #333;
+}
+
+/* Heading styling for the questions */
+.question h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+/* Styling for radio buttons and their labels */
+.choices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  padding-left: 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.choices label:hover {
+  color: #007bff;
+}
+
+.choices input[type="radio"] {
+  margin-right: 12px;
+  transform: scale(1.3);
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Styling for the form inputs */
+input[type="radio"] {
+  margin-right: 12px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Hide elements */
+.hidden {
+  display: none;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .question h2 {
+    font-size: 1.3rem;
+  }
+
+  .choices label {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+  

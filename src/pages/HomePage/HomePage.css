@@ -1,0 +1,210 @@
+/* General Styles */
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-page {
+  text-align: center;
+}
+
+/* Header Section */
+.home-header {
+  background-image: linear-gradient(to right, #4b79a1, #283e51);
+  color: white;
+  padding: 6rem 2rem;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-header h1 {
+  font-size: 3rem; /* Increased size for emphasis */
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-header p {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #eb6b4c;
+  box-shadow: 0 0 10px rgba(235, 107, 76, 0.7);
+  transform: scale(1.05);
+}
+
+/* Cybersecurity Information Section */
+.cyber-info {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cyber-info h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #283e51;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-item {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #ff7e5f;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Features Section */
+.home-features {
+  padding: 4rem 1rem;
+  background-color: gainsboro;
+}
+
+.home-features h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #283e51;
+  font-family: 'Roboto', sans-serif;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-item {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures even distribution of content inside */
+  height: 100px; /* Set fixed height */
+  font-family: 'Roboto', sans-serif;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4b79a1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  flex-grow:1; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-header p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .info-grid,
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item,
+  .feature-item {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-header {
+    padding: 4rem 1rem;
+  }
+
+  .home-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-header p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
