@@ -13,7 +13,6 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -39,7 +38,10 @@
     ]
   },
   "engines": {
-  "node": "16.x",
-  "npm": "8.x"
+    "node": "16.x",
+    "npm": "8.x"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
